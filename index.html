@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&family=Taviraj:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <ul class="nav">
+                <li class="tab-ui active"><a href="#" class="tab">React</a></li>
+                <li class="tab-ui"><a href="#" class="tab">Angular</a></li>
+                <li class="tab-ui"><a href="#" class="tab">Ember</a></li>
+                <li class="tab-ui"><a href="#" class="tab">Vue.js</a></li>
+                <li>
+                    <a href="#" class="not">
+                        more 
+                        <i class="fas fa-sort-down icon-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <div id="slider">
+                <i class="fas fa-chevron-circle-left slider-prev"></i>
+                <i class="fas fa-chevron-circle-right slider-next"></i>
+                <ul class="dots-list">
+                    <li class="dots-item active" data-index="0"></li>
+                    <li class="dots-item" data-index="1"></li>
+                    <li class="dots-item" data-index="2"></li>
+                    <li class="dots-item" data-index="3"></li>
+                    <li class="dots-item" data-index="4"></li>
+                </ul>
+                <div class="slider-wrapper">
+                    <div class="slider-main">
+                        <div class="slider-item">
+                            <img src="./assets/img/1.jpg" alt="picture-1">
+                        </div>
+                        <div class="slider-item">
+                            <img src="./assets/img/2.jpg" alt="picture-2">
+                        </div>
+                        <div class="slider-item">
+                            <img src="./assets/img/3.jpg" alt="picture-3">
+                        </div>
+                        <div class="slider-item">
+                            <img src="./assets/img/4.jpg" alt="picture-4">
+                        </div>
+                        <div class="slider-item">
+                            <img src="./assets/img/5.jpg" alt="picture-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="tab-content">
+                    <div class="tab-pane active">
+                      <h2>React</h2>
+                      <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+                    </div>
+                    <div class="tab-pane">
+                      <h2>Angular</h2>
+                      <p>Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.</p>
+                    </div>
+                    <div class="tab-pane">
+                      <h2>Ember</h2>
+                      <p>Ember.js is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.</p>
+                    </div>
+                    <div class="tab-pane">
+                      <h2>Vue.js</h2>
+                      <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="controls">
+                <div class="controls-left">
+                    <div class="img-song">
+                        <img alt="img1" class="img-track">
+                    </div>
+                    <div class="dad-name">
+                        <div class="name-song"></div>
+                    </div>
+                </div>
+                <div class="controls__middle">
+                    <div class="controls__middle--song">
+                        <i class="fas fa-random icon-mp3-small" id="random"></i>
+                        <i class="fas fa-backward icon-mp3" id="prev"></i>
+                        <div class="play-pause">
+                            <i class="fas fa-play-circle icon-mp3"></i>
+                        </div>
+                        <i class="fas fa-forward icon-mp3" id="next"></i>
+                        <i class="fas fa-redo-alt icon-mp3-small" id="return"></i>
+                    </div>
+                    <div class="controls__middle--range">
+                        <span id="curtimetext" class="time">00:00</span>
+                        <input type="range" min="1" max="100" value="0" class="range" id="duration-range">
+                        <span id="durtimetext" class="time">00:00</span>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <div class="img-logo">
+                        <img src="./img/by_order_of_the_peaky_blinders.png" alt="logo" class="logo">
+                    </div>
+                </div>
+            </div>
+            <audio class="audio"></audio>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
